@@ -1,11 +1,16 @@
 Package: marksToHIS
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Enter existings marks to HIS template
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Steffen Wagner
+Maintainer: Steffen Wagner <steffen.wagner@bht-berlin.de>
+Description: To import marks into the BHT Hochschulportal HIS a pre-defined 
+    (non-tabular) xlsx file has to be used. The marksToHIS package provides little helper
+    function to insert (join) existing tabular data with marks into the predefinded
+    xlsx file.
+Imports:
+    dplyr    
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.2.1
