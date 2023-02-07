@@ -56,6 +56,13 @@ replaceMarks <- function(marksHIS, dfMarks, colID, colMarks, strNotAttended = "-
     df$mark[is.na(df$mark)] <- strNotAttended
   }
 
+  # warning, if new IDs are contained in `dfMarks`
+  if(!(all(dfMarks[[colID]] %in% marksHIS$ID))) {
+    IDsmissing <- dfMarks[[colID]][!dfMarks[[colID]] %in% marksHIS$ID]
+    warning("The following IDs are not contained marksHIS:\n",
+            paste0(paste0(" - ", IDsmissing), collapse = "\n"))
+  }
+
   df
 
 }
