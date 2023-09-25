@@ -1,7 +1,7 @@
 Package: marksToHIS
 Type: Package
 Title: Enter existings marks to HIS template
-Version: 0.1.1
+Version: 0.1.2
 Author: Steffen Wagner
 Maintainer: Steffen Wagner <steffen.wagner@bht-berlin.de>
 Description: To import marks into the BHT Hochschulportal HIS a pre-defined 
@@ -13,4 +13,4 @@ Imports:
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
